@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgba(91, 54, 128, 0.877);
+      color: #fff;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border: 0;
+    }
+    .navbar-brand {
+      float: left;
+      min-height: 55px;
+      padding: 0 15px 5px;
+    }
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+      color: #fff;
+      background-color: #5e4485;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #D5D5D5;
+    }
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+    }
+    .btn {
+      font-size: 18px;
+      color: #fff;
+      padding: 12px 22px;
+      background-color: #5E4485;
+      border: 2px solid #fff;
+    }
+    .container {
+      margin: 4% auto;
+    }
+    #icon {
+      max-width: 150px;
+      margin: 2% auto;
+    }
+    footer {
+      width: 100%;
+      background-color: rgba(91, 54, 128, 0.877);
+      padding: 5%;
+      color: #fff;
+    }
+    .fa {
+      padding: 10px;
+      font-size: 25px;
+      color: #fff;
+    }
+    .fa:hover {
+      color: #D5D5D5;
+      text-decoration: none;
+    }
+    @media (max-width: 900px) {
+      .carousel-caption {
+        display: none;
+      }
+     #icon {
+       max-width: 100px;
+     }
+     h2 {
+        font-size: 1.7em;
+     }
+    }
+    ol li {
+      list-style: square;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="nav-brand" href="#"><img src="img/w3newbie.png">  </a>
+          </div> 
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"> <a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+      </div>
+  </nav>
+<!--This is the end of the nav-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="list-box">
+        <div class="item active">
+          <img src="img/try.jpg">
+          <div class="carousel-caption">
+              <h1> Get to know about Full stack dev</h1>
+              <br>
+              <button type="button" class="btn btn-default">Get Started </button>
+          </div>
+      </div> <!--End active-->
+      <div class="item">
+        <img src="img/tee.jpg">
+      </div>
+      <div class="item">
+        <img src="img/first.jpg">
+  </div>
+  <!--Start slider control-->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" area-hidden="True"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+
+  <div class="container text-center">
+    <h2>What We Are Using The most</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/html5.png" id="icon">
+        <h4>HTML5</h4>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/css3.png" id="icon">
+        <h4>CSS3</h4>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/javascript.png" id="icon">
+        <h4>Javascript</h4>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/bootstrap.png" id="icon">
+        <h4>Bootstrap</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>What Exactly Is A Full-Stack Web Developer?</h4>
+      <p> A full stack web developer is a person who can develop both client and server software.
+        In addition to mastering HTML and CSS, he/she also knows how to: 
+        <ol>
+          <li>Program a browser (like using JavaScript, jQuery, Angular, or Vue)</li>
+          <li>Program a server (like using PHP, ASP, Python, or Node)</li>
+          <li>Program a database (like using SQL, SQLite, or MongoDB)</li>
+        </ol>
+        </p>
+        <p>
+          Popular Stacks :
+          <ol>
+            <li>LAMP stack: JavaScript - Linux - Apache - MySQL - PHP</li>
+            <li>LEMP stack: JavaScript - Linux - Nginx - MySQL - PHP</li>
+            <li>MEAN stack: JavaScript - MongoDB - Express - AngularJS - Node.js</li>
+            <li>Django stack: JavaScript - Python - Django - MySQL</li>
+            <li>Ruby on Rails: JavaScript - Ruby - SQLite - Rails</li>
+          </ol>
+        </p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/loo.jpg" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xsm-12">
+      <h4>Advantages</h4>
+      <p>The advantage of being a full stack web developer is:
+        <ol>
+          <li>You can master all the techniques involved in a development project
+          </li>
+          <li>You can make a prototype very rapidly</li>
+          <li>You can switch between front and back end development based on requirements</li>
+          <li>You can better understand all aspects of new and upcoming technologies</li>
+         </ol>
+        </p>
+
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xsm-12">
+      <img src="img/task.jpg" class="img-responsive">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xsm-12">
+      <h4>Desadvantages</h4>
+      <p>The disadvantage of being a full stack web developer is:
+        <ol>
+          <li>The solution chosen can be dependent on developer skills</li>
+          <li>The solution can generate a key person risk</li>
+          <li>Being a full stack developer is increasingly complex</li>
+         </ol>
+        </p>
+
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xsm-12">
+      <img src="img/more.jpg" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h4><a href="#hidden" data-toggle="collapse">Care to learn more about the topic</a></h4>
+      <div id="hidden" class="collapse">
+        <p> A qualified full stack developer should have functional knowledge and capabilities for all aspects involved in building the application.  
+        You need to be proficient in multiple programming languages, such as JAVA, PHP, C #, Python, Ruby, Perl, etc. As most of your core business processes need to be written in these languages.Maybe not all need. But you also have to master the language grammar, and to be very familiar with how to structure, design, implementation, and testing of the project based on one language or more languages. For example, if you choose JAVA, then you need to master the object-oriented design and development, design patterns, J2EE-based components of the development and so on.
+        </p>
+        <p>Where to learn:<a href="https://lab.github.com"> Git/GitHub</a> — You have to know how to use Git to manage and share your code.</p>
+        </div>
+    </div>
+</div>
+<!--Start of footer-->
+<footer class="container-fluid text-center">
+  <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Us</h3>
+        <br>infos
+        <h4></h4>
+        <h5> © UWU | Website made with love&#10084;&#128153;</h5>
+      </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>  
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/bunny.png" class="icon">    
+    </div>
+ </div>
+
+</footer>
+<!--End of footer-->
+</body>
+</html> 
